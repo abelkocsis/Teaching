@@ -26,7 +26,7 @@ A házifeladat megoldása opcionális, maximum 2 pontot lehet szerezni vele, ami
 
 * A Travel osztály main metódusában hajtsuk érjük el a kommentben kért feladatokat:
 
-    public static void main(String[] args){
+        public static void main(String[] args){
         
         Vechile v1 = new Vechile("auto", 4, 4);
         Vechile v2 = new Vechile("busz", 50, 6);
@@ -99,7 +99,7 @@ A házifeladat megoldása opcionális, maximum 2 pontot lehet szerezni vele, ami
         //Eredmeny: 10 24 31 2147483647  
 
 
-    }
+        }
 
 
 
