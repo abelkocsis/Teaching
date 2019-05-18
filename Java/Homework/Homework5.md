@@ -9,7 +9,7 @@ Az alábbi feladatban egy játék programozása során felmerülő problémákat
   
   * A *CanAttack* interfészt implementáló osztályok rendelkezzenek *Attack (Tower t)* metódussal.
   
-  * A *Building* osztály mezői az építmény koordinátái, és implementálja a *getCoordinate* interfészt. Ezen kívül mezője az építmény neve. Írjuk meg a konstruktorát is, mely az építmény nevét és koordinátáit várja paraméterül.
+  * A *Building* osztály mezői az építmény koordinátái, és implementálja a *Building* interfészt. Ezen kívül mezője az építmény neve. Írjuk meg a konstruktorát is, mely az építmény nevét és koordinátáit várja paraméterül.
   
   * A *Tower* osztály a örökölje a Building osztály adattagjait, valamint írjuk meg konstruktorát. Legyen egy hp (int) mezője, melyben az életét tároljuk.
   

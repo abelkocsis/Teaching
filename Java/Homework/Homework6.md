@@ -113,7 +113,7 @@ A házifeladat megoldása opcionális, maximum 2 pontot lehet szerezni vele, ami
 
 * A fél pont megszerzéséhez legalább a program felének tökéletesnek kell lennie. 
 
-* A fordulás érdekében a main metódusból (amennyiben nem emximális pontszám a célunk) engedélyezett egyes részek kikommentelése.
+* A fordulás érdekében a main metódusból (amennyiben nem maximális pontszám a célunk) engedélyezett egyes részek kikommentelése.
 
 * A feladatban az elvárt működéshez tetszőleg segédfüggvények vagy mezők alkalmazhatóak tetszőleges láthatósággal.
 
