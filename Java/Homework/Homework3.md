@@ -18,7 +18,7 @@ A házi feladat megoldása opcionális, de nagyban segíti a felkészülést az 
   
   * Kezeljük le, ha a Player osztály Exception-t dob!
   
-  * A Team osztályban legyen olyan paraméter nélküli metódusunk, mely megadja, hogy a benne szereplő legértékesenn 3 játékosok összesen mennyit ér.
+  * A Team osztályban legyen olyan paraméter nélküli metódusunk, mely megadja, hogy a benne szereplő legértékesebb 3 játékosok összesen mennyit ér.
   
   * A Team osztályban legyen egy olyan (*static*) winner metódusunk, mely két csapatot vár paraméterként, és azzal a csapattal tér vissza, amely legértékesebb 3 játékosának értékének összege nagyobb!
   
