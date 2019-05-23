@@ -69,15 +69,15 @@ Ekkor a modellezés a következőképpen történik:
 
 - S3-ban vagyunk.
 
- - Beállítjuk az S3 firstAvailable mezőjét 30-ra, hiszen akkor értünk oda.
+  - Beállítjuk az S3 firstAvailable mezőjét 30-ra, hiszen akkor értünk oda.
 
- - Vesszük a legelőször induló voantot, v6-ot, ezt elérjük, felszállunk rá, elszállít minket S4-be.
+  - Vesszük a legelőször induló voantot, v6-ot, ezt elérjük, felszállunk rá, elszállít minket S4-be.
 
 - S4-ben vagyunk.
 
- - Beállítjuk az S4 firstAvailable mezőjét 45-re, hiszen akkor értünk oda.
+  - Beállítjuk az S4 firstAvailable mezőjét 45-re, hiszen akkor értünk oda.
 
- - Elértünk a célállomásra, nem megyünk tovább. 
+  - Elértünk a célállomásra, nem megyünk tovább. 
 
 
 
