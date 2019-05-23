@@ -53,31 +53,31 @@ Ekkor a modellezés a következőképpen történik:
 
 - S1-ben vagyunk.
 
-        - Beállítjuk az S1 firstAvailable mezőjét 7-re, hiszen ebben az időpillanatban értük el.
+ - Beállítjuk az S1 firstAvailable mezőjét 7-re, hiszen ebben az időpillanatban értük el.
 
-        - Vesszük indulási időben sorban az állomásokat. A v1 indult leghamarabb, de ezt már lekéstük (5. időpillanatban indult, és mi a 7-esben vagyunk).
+ - Vesszük indulási időben sorban az állomásokat. A v1 indult leghamarabb, de ezt már lekéstük (5. időpillanatban indult, és mi a 7-esben vagyunk).
 
-        - Vesszük a v2-t, ezt elérjük, felszállunk rá. Ez - az adatai alapján - az S2-be szállít minket, és 20-ra érünk oda.
+ - Vesszük a v2-t, ezt elérjük, felszállunk rá. Ez - az adatai alapján - az S2-be szállít minket, és 20-ra érünk oda.
 
 - S2-ben vagyunk.
 
-        - az S2 firstAvailable mezőjét 20-ra, hiszen akkor értünk oda.
+ - az S2 firstAvailable mezőjét 20-ra, hiszen akkor értünk oda.
 
-        - Vesszük a legelőször induló voantot, v4-et, ezt már lekéstük.
+ - Vesszük a legelőször induló voantot, v4-et, ezt már lekéstük.
 
-        - Vesszük a másodszorra induló vonatot, v3-at, ezt elérjük, felszállunk rá, mely elszállít minket S3-ba.
+ - Vesszük a másodszorra induló vonatot, v3-at, ezt elérjük, felszállunk rá, mely elszállít minket S3-ba.
 
 - S3-ban vagyunk.
 
-        - Beállítjuk az S3 firstAvailable mezőjét 30-ra, hiszen akkor értünk oda.
+ - Beállítjuk az S3 firstAvailable mezőjét 30-ra, hiszen akkor értünk oda.
 
-        - Vesszük a legelőször induló voantot, v6-ot, ezt elérjük, felszállunk rá, elszállít minket S4-be.
+ - Vesszük a legelőször induló voantot, v6-ot, ezt elérjük, felszállunk rá, elszállít minket S4-be.
 
 - S4-ben vagyunk.
 
-        - Beállítjuk az S4 firstAvailable mezőjét 45-re, hiszen akkor értünk oda.
+ - Beállítjuk az S4 firstAvailable mezőjét 45-re, hiszen akkor értünk oda.
 
-        - Elértünk a célállomásra, nem megyünk tovább. 
+ - Elértünk a célállomásra, nem megyünk tovább. 
 
 
 
