@@ -20,6 +20,8 @@ A házifeladat megoldása opcionális, maximum 2 pontot lehet szerezni vele, ami
 
 * A doTravel (int n, int t, Station d) metódus a következőt hajtja végre: a stations listában n-edik helyen (0-tól indexelve) szereplő Stationból t időben indulva végrehajtja az első lehetséges utazást rekurzívan, és eltárolja a Stationokban a firstAvailableAt mezőket. Célunk a d Station firstAvailableAt minimalizálása (tehát ebből a Stationból már nem kell továbbmenni). Ha szükséges, vezessünk be segéd mezőket.
 
+---------
+
 *Példa*
 
 Tekintsük az [alábbi](http://abelkocsis.web.elte.hu/2018-19-2/java/files/graph.png) konstrukciót!
@@ -79,8 +81,7 @@ Ekkor a modellezés a következőképpen történik:
 
   - Elértünk a célállomásra, nem megyünk tovább. 
 
-
-
+---------
 
 
 * A clearFirstAvailableAt() metódus az összes Station firstAvailableAt mezőjét állítsa vissza az eredeti értékre, és a getNextTrain metódusát indítsa előről! (Tehát a következő meghívása az első vonattal térjen vissza)!
