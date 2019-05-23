@@ -20,64 +20,64 @@ A házifeladat megoldása opcionális, maximum 2 pontot lehet szerezni vele, ami
 
 * A doTravel (int n, int t, Station d) metódus a következőt hajtja végre: a stations listában n-edik helyen (0-tól indexelve) szereplő Stationból t időben indulva végrehajtja az első lehetséges utazást rekurzívan, és eltárolja a Stationokban a firstAvailableAt mezőket. Célunk a d Station firstAvailableAt minimalizálása (tehát ebből a Stationból már nem kell továbbmenni). Ha szükséges, vezessünk be segéd mezőket.
 
-        *Példa*
+*Példa*
 
-        Tekintsük az [alábbi](http://abelkocsis.web.elte.hu/2018-19-2/java/files/graph.png) konstrukciót!
-        A gráf csúcsai az állomások (S1, S2, stb.), míg az élei a vonatok. Az állomások a stations listánkba az állomások a számozásnak megfelelő sorrendben vannak. (Tehát S1 a 0. helyen, S2 az 1. helyen, stb.)
+Tekintsük az [alábbi](http://abelkocsis.web.elte.hu/2018-19-2/java/files/graph.png) konstrukciót!
+A gráf csúcsai az állomások (S1, S2, stb.), míg az élei a vonatok. Az állomások a stations listánkba az állomások a számozásnak megfelelő sorrendben vannak. (Tehát S1 a 0. helyen, S2 az 1. helyen, stb.)
 
-        A vonatok a jelölt állomásokat kötik össze, ezen kívül az adataik:
+A vonatok a jelölt állomásokat kötik össze, ezen kívül az adataik:
 
-        v1 - departureTime: 5 - arrivingTime: 12
+v1 - departureTime: 5 - arrivingTime: 12
 
-        v2 - departureTime: 10 - arrivingTime: 20
+v2 - departureTime: 10 - arrivingTime: 20
 
-        v3 - departureTime: 25 - arrivingTime: 30
+v3 - departureTime: 25 - arrivingTime: 30
 
-        v4 - departureTime: 12 - arrivingTime: 28
+v4 - departureTime: 12 - arrivingTime: 28
 
-        v5 - departureTime: 30 - arrivingTime: 32
+v5 - departureTime: 30 - arrivingTime: 32
 
-        v6 - departureTime: 40 - arrivingTime: 45
+v6 - departureTime: 40 - arrivingTime: 45
 
-        v7 - departureTime: 42 - arrivingTime: 40
+v7 - departureTime: 42 - arrivingTime: 40
 
-        Hívjuk meg a doTravel (0, 7, S4) metódust!
+Hívjuk meg a doTravel (0, 7, S4) metódust!
 
-        Ekkor a modellezés a következőképpen történik:
+Ekkor a modellezés a következőképpen történik:
 
-        - A stations lista 0. állomásából indulunk, azaz az S1-ből.
+- A stations lista 0. állomásából indulunk, azaz az S1-ből.
 
-        - Célunk, hogy elérjük az S4 állomást.
+- Célunk, hogy elérjük az S4 állomást.
 
-        - A 7-es időpillanatban indulunk.
+- A 7-es időpillanatban indulunk.
 
-        - S1-ben vagyunk.
+- S1-ben vagyunk.
 
-                - Beállítjuk az S1 firstAvailable mezőjét 7-re, hiszen ebben az időpillanatban értük el.
+        - Beállítjuk az S1 firstAvailable mezőjét 7-re, hiszen ebben az időpillanatban értük el.
 
-                - Vesszük indulási időben sorban az állomásokat. A v1 indult leghamarabb, de ezt már lekéstük (5. időpillanatban indult, és mi a 7-esben vagyunk).
+        - Vesszük indulási időben sorban az állomásokat. A v1 indult leghamarabb, de ezt már lekéstük (5. időpillanatban indult, és mi a 7-esben vagyunk).
 
-                - Vesszük a v2-t, ezt elérjük, felszállunk rá. Ez - az adatai alapján - az S2-be szállít minket, és 20-ra érünk oda.
+        - Vesszük a v2-t, ezt elérjük, felszállunk rá. Ez - az adatai alapján - az S2-be szállít minket, és 20-ra érünk oda.
 
-        - S2-ben vagyunk.
+- S2-ben vagyunk.
 
-                - Beállítjuk az S2 firstAvailable mezőjét 20-ra, hiszen akkor értünk oda.
+        - az S2 firstAvailable mezőjét 20-ra, hiszen akkor értünk oda.
 
-                - Vesszük a legelőször induló voantot, v4-et, ezt már lekéstük.
+        - Vesszük a legelőször induló voantot, v4-et, ezt már lekéstük.
 
-                - Vesszük a másodszorra induló vonatot, v3-at, ezt elérjük, felszállunk rá, mely elszállít minket S3-ba.
+        - Vesszük a másodszorra induló vonatot, v3-at, ezt elérjük, felszállunk rá, mely elszállít minket S3-ba.
 
-        - S3-ban vagyunk.
+- S3-ban vagyunk.
 
-                - Beállítjuk az S3 firstAvailable mezőjét 30-ra, hiszen akkor értünk oda.
+        - Beállítjuk az S3 firstAvailable mezőjét 30-ra, hiszen akkor értünk oda.
 
-                - Vesszük a legelőször induló voantot, v6-ot, ezt elérjük, felszállunk rá, elszállít minket S4-be.
+        - Vesszük a legelőször induló voantot, v6-ot, ezt elérjük, felszállunk rá, elszállít minket S4-be.
 
-        - S4-ben vagyunk.
+- S4-ben vagyunk.
 
-                - Beállítjuk az S4 firstAvailable mezőjét 45-re, hiszen akkor értünk oda.
+        - Beállítjuk az S4 firstAvailable mezőjét 45-re, hiszen akkor értünk oda.
 
-                - Elértünk a célállomásra, nem megyünk tovább. 
+        - Elértünk a célállomásra, nem megyünk tovább. 
 
 
 
