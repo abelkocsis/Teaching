@@ -10,7 +10,7 @@ A forradalmi *TV app* új megközelítést visz a tévénézés világába, egys
 
 ### `tv.Wallet`
 
-Készíts egy `tv.Wallet` (*továbbiakban tárca*) osztály, amely az alkalmazáson belüli fizetést teszi lehetővé. Az tárca a `tv.CreditCard` osztállyal ((link)[https://github.com/abelkocsis/Teaching/blob/master/Java/Files/Test.java]) fog kommunikálni és pénzt kérni onnan, ha valamiért fizetnünk kell. Ez azért szükséges, hogy az alkalmazásnak ne kelljen közvetlenül bankkártyákat kezelnie, a fizetéshez elegendő legyen a csak tárcából "kivenni" a pénzt.
+Készíts egy `tv.Wallet` (*továbbiakban tárca*) osztály, amely az alkalmazáson belüli fizetést teszi lehetővé. Az tárca a `tv.CreditCard` osztállyal ([link](https://github.com/abelkocsis/Teaching/blob/master/Java/Files/Test.java) ) fog kommunikálni és pénzt kérni onnan, ha valamiért fizetnünk kell. Ez azért szükséges, hogy az alkalmazásnak ne kelljen közvetlenül bankkártyákat kezelnie, a fizetéshez elegendő legyen a csak tárcából "kivenni" a pénzt.
 
 A tárca fogja nyilvántartani a rendelkezésre álló összegünket (*egy adattag formályában*).
 
