@@ -3,14 +3,14 @@
 
 ## TV app
 
-A feladat egy olyan JAVA program írása, amely bemutatja egy *TV app* nevű alkalmazás működését. A (részben) kész megoldásod a melléket `Test` osztállyal ellenőrizheted. Részleges megoldás teszteléséhez, kommenteld ki a még nem kész programrészekre vonatkozó teszteket!
+A feladat egy olyan JAVA program írása, amely bemutatja egy *TV app* nevű alkalmazás működését. A (részben) kész megoldásod a melléket [`Test`](https://github.com/abelkocsis/Teaching/blob/master/Java/Files/Test.java) osztállyal ellenőrizheted. Részleges megoldás teszteléséhez, kommenteld ki a még nem kész programrészekre vonatkozó teszteket!
 
 A forradalmi *TV app* új megközelítést visz a tévénézés világába, egységes platformot biztosítva tv-, film- és sorozatnézésre. Az alkalmazásban elérhető műsorokat egy gombnyomásra elindíthatjuk, és előfizethetünk a hozzájuk tartozó csatornára. *(Például, ha a legújabb Trónok harca részt szeretnéd megnézni, nem kell letöltened a HBO GO alkalmazást majd regisztrálni és fizetni, mivel az alkalmazás mindent elintéz helytted. Így azonnal nézni kezdheted.)* Természetesen, ezen funkciókhoz először meg kell adnod valamilyen fizetési módot, de minden más automatikus lesz. Hogy ez megvalósulhasson, a szükséges programrészeket Neked kell implementálni.
 
 
 ### `tv.Wallet`
 
-Készíts egy `tv.Wallet` (*továbbiakban tárca*) osztály, amely az alkalmazáson belüli fizetést teszi lehetővé. Az tárca a `tv.CreditCard` osztállyal (*ezt mindenki előre megkapja a feladattal*) fog kommunikálni és pénzt kérni onnan, ha valamiért fizetnünk kell. Ez azért szükséges, hogy az alkalmazásnak ne kelljen közvetlenül bankkártyákat kezelnie, a fizetéshez elegendő legyen a csak tárcából "kivenni" a pénzt.
+Készíts egy `tv.Wallet` (*továbbiakban tárca*) osztály, amely az alkalmazáson belüli fizetést teszi lehetővé. Az tárca a [`tv.CreditCard`](https://github.com/abelkocsis/Teaching/blob/master/Java/Files/CreditCard.java) osztállyal fog kommunikálni és pénzt kérni onnan, ha valamiért fizetnünk kell. Ez azért szükséges, hogy az alkalmazásnak ne kelljen közvetlenül bankkártyákat kezelnie, a fizetéshez elegendő legyen a csak tárcából "kivenni" a pénzt.
 
 A tárca fogja nyilvántartani a rendelkezésre álló összegünket (*egy adattag formályában*).
 
