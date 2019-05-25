@@ -3,7 +3,7 @@
 
 ## TV app
 
-A feladat egy olyan JAVA program írása, amely bemutatja egy *TV app* nevű alkalmazás működését. A (részben) kész megoldásod a melléket [`test`](https://github.com/abelkocsis/Teaching/tree/master/Java/Files/test) package-ben lévő Test osztállyal ellenőrizheted. További szükséges fájlok: [`tv`](https://github.com/abelkocsis/Teaching/tree/master/Java/Files/tv) Részleges megoldás teszteléséhez, kommenteld ki a még nem kész programrészekre vonatkozó teszteket!
+A feladat egy olyan JAVA program írása, amely bemutatja egy *TV app* nevű alkalmazás működését. A (részben) kész megoldásod a melléket [`test`](https://github.com/abelkocsis/Teaching/tree/master/Java/Files/test) package-ben lévő Test osztállyal ellenőrizheted. További szükséges fájlok a kezdetleges [`tv`](https://github.com/abelkocsis/Teaching/tree/master/Java/Files/tv) package-ben találhatóak. Részleges megoldás teszteléséhez, kommenteld ki a még nem kész programrészekre vonatkozó teszteket!
 
 A forradalmi *TV app* új megközelítést visz a tévénézés világába, egységes platformot biztosítva tv-, film- és sorozatnézésre. Az alkalmazásban elérhető műsorokat egy gombnyomásra elindíthatjuk, és előfizethetünk a hozzájuk tartozó csatornára. *(Például, ha a legújabb Trónok harca részt szeretnéd megnézni, nem kell letöltened a HBO GO alkalmazást majd regisztrálni és fizetni, mivel az alkalmazás mindent elintéz helytted. Így azonnal nézni kezdheted.)* Természetesen, ezen funkciókhoz először meg kell adnod valamilyen fizetési módot, de minden más automatikus lesz. Hogy ez megvalósulhasson, a szükséges programrészeket Neked kell implementálni.
 
