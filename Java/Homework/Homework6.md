@@ -57,7 +57,7 @@ Ekkor a modellezés a következőképpen történik:
 
   - Beállítjuk az S1 firstAvailable mezőjét 7-re, hiszen ebben az időpillanatban értük el.
 
-  - Vesszük indulási időben sorban az állomásokat. A v1 indult leghamarabb, de ezt már lekéstük (5. időpillanatban indult, és mi a 7-esben vagyunk).
+  - Vesszük indulási időben sorban a vonatokat. A v1 indult leghamarabb, de ezt már lekéstük (5. időpillanatban indult, és mi a 7-esben vagyunk).
 
   - Vesszük a v2-t, ezt elérjük, felszállunk rá. Ez - az adatai alapján - az S2-be szállít minket, és 20-ra érünk oda.
 
