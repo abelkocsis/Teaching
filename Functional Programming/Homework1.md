@@ -15,7 +15,7 @@ Tesztesetek:
 
 **Feladat 2**
 
-Adjuk meg a *trap* függvény definícióját a következő képpen: a függvény hátom paramátert vár (a, c, m), és a trapéz területével, ahol a és c a párhuzamos oldalak hossza, m pedig a trapéz magassága. (Segítség: https://www.calculat.org/hu/terulet-kerulet/)
+Adjuk meg a *trap* függvény definícióját a következő képpen: a függvény hátom paramátert vár (a, c, m), és a trapéz területével tér vissza, ahol a és c a párhuzamos oldalak hossza, m pedig a trapéz magassága. (Segítség: https://www.calculat.org/hu/terulet-kerulet/)
 
 Tesztesetek:
 
