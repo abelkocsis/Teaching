@@ -37,7 +37,7 @@ even' :: Integer -> Bool
 even' a = a `mod` 2 == 0
 
 distance :: Integer -> Integer -> Integer
---distance :: Integral a => a -> a -> a
+--distance :: Num a => a -> a -> a
 distance a b = abs (a - b)
 
 fracMul :: Double -> Double -> Double -> Double -> Double
