@@ -1,6 +1,7 @@
 **Házi feladat 2.**
 
 Határidő: szeptember 24. (kedd) 23:59
+
 A függgvények definíciója előtt ne felejtsd el megadni azok típuasit!
 
 **Feladat 1**
