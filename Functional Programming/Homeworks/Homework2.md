@@ -9,6 +9,7 @@ Adjunk meg a *fracAdd* kétparaméteres függvény defincícióját, mely két t
 A rendezett párok egy-egy törtet jelölnek a tuple első tagja a tört számlálója, a második tagja a nevezője. A *fracAdd* függvény a törtek összegével tér vissza hasonló tuple-ként.
 
 Tesztesetek:
+
             fracAdd (1, 2) (2, 3) == (7, 6)
             fracAdd (1, 2) (3, 2) == (8, 4)
             fracAdd (3, 4) (7, 9) == (55, 36)
