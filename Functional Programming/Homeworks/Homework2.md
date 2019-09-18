@@ -23,6 +23,7 @@ Az x^2 − 6x + 8 = 0 megoldása:
             quadratic 1.0 (-6.0) 8.0 == (2.0, 4.0)
 
 Tesztesetek:
+
             quadratic 1.0 (-6.0) 8.0 == (2.0, 4.0)
             quadratic 1 (-8) 16 == (4.0, 4.0)
             quadratic 1 (-8) 12 == (2.0, 6.0)
