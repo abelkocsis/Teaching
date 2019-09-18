@@ -52,11 +52,5 @@ mySecondTuple (a, b) = b
 fracMulTuple :: (Double, Double) -> (Double, Double) -> (Double, Double)
 fracMulTuple (a, b) (p, q) = (a * p, b * q)
 
-fracAdd :: Double -> Double -> Double -> Double -> Double
-fracAdd a b p q = (a * q + p * b) / (b * q)
-
-fracAddTuple :: (Double, Double) -> (Double, Double) -> (Double, Double)
-fracAddTuple (a, b) (p, q) = ((a * q + p * b), (b * q))
-
 matches :: (Integer, Integer) -> (Integer, Integer) -> Bool
 matches (a, b) (c, d) = b == c
