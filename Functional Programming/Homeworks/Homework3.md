@@ -17,11 +17,11 @@ Definiálj egy *mul* függvényt, mely képes két Real típusosztályba tartoz�
 
 Segítség:
 
-    - (12::Int) jelentése: a 12-re "rákényszerítjük", hogy Int típusú legyen
+- (12::Int) jelentése: a 12-re "rákényszerítjük", hogy Int típusú legyen
 
-    - Típusosztályok hierarchiája: http://lambda.inf.elte.hu/Syntax.xml
+- Típusosztályok hierarchiája: http://lambda.inf.elte.hu/Syntax.xml
 
-    - Konverziós függvények: http://lambda.inf.elte.hu/Conversion.xml 
+- Konverziós függvények: http://lambda.inf.elte.hu/Conversion.xml 
 
 
 Tesztesetek:
