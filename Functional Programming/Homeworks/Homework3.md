@@ -3,11 +3,12 @@
 Határidő: október 1. (kedd) 23:59
 
 A függgvények definíciója előtt ne felejtsd el megadni azok típusait!
+
 Figyelem! A feladatok nem feltétlenül mintaillesztéses feladatok.
 
 **Feladat 1**
 
-Keress Hoogle-ön egy olyan típusosztályt, amiről nem beszéltünk órán! Írd le a lényegét, annak pár példányát, és azok jelentőségét!
+Keress (Hoogle)[https://hoogle.haskell.org]-ön egy olyan típusosztályt, amiről nem beszéltünk órán! Írd le a lényegét, annak pár példányát, és azok jelentőségét!
 (A megoldásodat ne a fealdatokkal együtt, hanem utána hozzászólásban add meg!)
 
 **Feladat 2**
