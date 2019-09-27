@@ -13,7 +13,7 @@ Keress [Hoogle](https://hoogle.haskell.org)-ön egy olyan típusosztályt, amir�
 
 **Feladat 2**
 
-Definiálj egy *mul* függvényt, mely képes két Real típusosztályba tartozó számot összeszorozni, és egy Float típussal tér vissza!
+Definiálj egy *mul'* függvényt, mely képes két Real típusosztályba tartozó számot összeszorozni, és egy Float típussal tér vissza!
 
 Segítség:
 
@@ -26,23 +26,23 @@ Segítség:
 
 Tesztesetek:
 
-            mul 6 3 == 18.0
-            mul 6.7 (4/2) == 13.4
-            mul (12::Int) (6::Integer) == 72.0
-            mul (14.5::Float) (23.4::Double) == 339.3
+            mul' 6 3 == 18.0
+            mul' 6.7 (4/2) == 13.4
+            mul' (12::Int) (6::Integer) == 72.0
+            mul' (14.5::Float) (23.4::Double) == 339.3
 
 
 **Feladat 3**
 
-Írj egy swap függvényt, mely megcseréli egy pár két elemét.
+Írj egy *swap'* függvényt, mely megcseréli egy pár két elemét.
 
 Segítség: típus: swap :: (a, b) -> (b, a)
 
 Tesztesetek:
 
-            swap (3, "hi") == ("hi", 3)
-            swap (1, 2) == (2, 1)
-            swap ("asd", True) = (True, "asd")
+            swap' (3, "hi") == ("hi", 3)
+            swap' (1, 2) == (2, 1)
+            swap' ("asd", True) = (True, "asd")
 
 
 **Feladat 4**
