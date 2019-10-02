@@ -42,10 +42,16 @@ Tesztesetek:
             addProductAndSumFirst [1,2,7,1] [3,4,9,2] == [14,1,2,7,1,18,3,4,9,2]
 
 
+**Feladat 4**
 
+Definiálj egy *duplicateAndRev* függvényt, mely egy tetszőleges listát vár paraméternek, majd összefűzi a fordítottját és az eredeti listát! 
 
+Segítség: http://lambda.inf.elte.hu/TypeIndex.xml#listák
 
+Tesztesetek:
 
-
-
-
+            duplicateAndRev [] == []
+            duplicateAndRev [1] == [1,1]
+            duplicateAndRev [1,2] == [2,1,1,2]
+            duplicateAndRev [1,2,3,4] == [4,3,2,1,1,2,3,4]
+            duplicateAndRev [4,2,5,5,0,2,5,2,3,5,1,3] == [3,1,5,3,2,5,2,0,5,5,2,4,4,2,5,5,0,2,5,2,3,5,1,3]
