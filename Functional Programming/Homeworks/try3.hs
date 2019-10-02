@@ -1,1 +1,0 @@
-duplicateAndRev l = reverse l ++ l
