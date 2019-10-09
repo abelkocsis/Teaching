@@ -18,9 +18,9 @@ Tesztesetek:
 
 **Feladat 2**
 
-Írj egy *isPerfectNumber* függvényt, mely egy Integer paramétert vár, és True-val tér vissza, ha a szám tökáéletes!
+Írj egy *isPerfectNumber* függvényt, mely egy Integer paramétert vár, és True-val tér vissza, ha a szám tökéletes!
 
-Segítség: Egy szám tökáletes, ha az önmagánál kisebb osztóinak összege megegíezik a számmal. (https://hu.wikipedia.org/wiki/Tökéletes_számok)
+Segítség: Egy szám tökéletes, ha az önmagánál kisebb osztóinak összege megegyezik a számmal. (https://hu.wikipedia.org/wiki/Tökéletes_számok)
 
 Tesztesetek:
 
@@ -30,7 +30,7 @@ Tesztesetek:
 
 **Feladat 3**
 
-Definiálj egy *perfectNumbers* függvényt, mely egy egész számot vár paraméterül, és visszatér az n-nél kisebb vagy egyenlő tökéletes számokból álló listával.
+Definiálj egy *perfectNumbers* függvényt, mely egy egész számot vár paraméterül, és visszatér az ennél kisebb vagy egyenlő tökéletes számokból álló listával.
 
 Segítség: használd a feljebb elkészített függvényeket!
 
@@ -43,13 +43,13 @@ Tesztesetek:
 
 **Feladat 4**
 
-Hozzunk létre egy olyan *dominos* függvényt, mely egy egész paramétert vár, és egy olyan listával tér vissz, melyben az összes olyan dominó szerepel, amelyen a pöttyök összege osztója a paraméternek. Minden dominó csak egszer szerepeljen (pl a (0,1) és az (1,0) megegyezik). A dominó mindegyik odalán most 1,2,...9 pötty állhat.
+Hozzunk létre egy olyan *modDominos* függvényt, mely egy egész paramétert vár, és egy olyan listával tér vissz, melyben az összes olyan dominó szerepel, amelyen a pöttyök összege osztója a paraméternek. Minden dominó csak egszer szerepeljen (pl a (0,1) és az (1,0) megegyezik). A dominó mindegyik odalán most 1,2,...9 pötty állhat.
 
 Tesztesetek:
 
-            dominos 1 == []
-            dominos 3 == [(1,2)]
-            dominos 7 == [(1,6),(2,5),(3,4)]
+            modDominos 1 == []
+            modDominos 3 == [(1,2)]
+            modDominos 7 == [(1,6),(2,5),(3,4)]
             
 
 
