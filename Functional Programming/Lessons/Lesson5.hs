@@ -33,12 +33,3 @@ fel7 = [(h, n) | h <- [1..12], n <- [1..31], (n < 31 || elem h [1,3,5,7,8,10,12]
 
 --Feladat: Sorszámozás [*]
 fel8 = zip [1..] ['a'..'z']
-
---Feladat: Az összes természetes számpár
-fel9 = [(a, n-a) | n <- [0..], a <- [0..n]]
-
---Feladat: 1, 2, 2, 3, 3, 3, … [*]
-fel10 = [i | i <- [1..], j <- [1..i]]
-
---Feladat: 1, 2, 1, 2, 3, 2, 1, … [*]
-fel11 = concat [[a | a <- [1..n]] ++ [n-1,n-2..2] | n <- [2..]] d
