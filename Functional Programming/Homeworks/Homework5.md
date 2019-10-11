@@ -43,7 +43,7 @@ Tesztesetek:
 
 **Feladat 4**
 
-Hozzunk létre egy olyan *modDominos* függvényt, mely egy egész paramétert vár, és egy olyan listával tér vissz, melyben az összes olyan dominó szerepel, amelyen a pöttyök összege osztója a paraméternek. Minden dominó csak egszer szerepeljen (pl a (0,1) és az (1,0) megegyezik). A dominó mindegyik odalán most 1,2,...9 pötty állhat.
+Hozzunk létre egy olyan *modDominos* függvényt, mely egy egész paramétert vár, és egy olyan listával tér vissz, melyben az összes olyan dominó szerepel, amelyen a pöttyök összege osztója a paraméternek. Minden dominó csak egszer szerepeljen (pl a (1,2) és az (2,1) megegyezik). A dominó mindegyik odalán most 1,2,...9 pötty állhat.
 
 Tesztesetek:
 
