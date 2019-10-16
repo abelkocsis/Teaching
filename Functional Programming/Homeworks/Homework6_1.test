@@ -1,0 +1,13 @@
+decompress [(4,'a'), (1,'b'), (2,'c'), (2,'a'), (1,'d'), (4,'e')]            == "aaaabccaadeeee"
+decompress [(1,'o'),(1,'h'),(1,' '),(1,'h'),(1,'e'),(2,'l'),(1,'o'),(2,'!')] == "oh hello!!"
+decompress [] == ""
+
+studentResults ([(0, ("Kiss", "Janos", 24), [0,1,1,2,2,1,2,0,0,1]),(1, ("Nagy", "David", 11), [0,0,0,0,1,1,0,0,1,0,1]),(2, ("Horvath", "Jozsef", 20), [1,1,2,2,1,2,0,1,2])]) == [("Kiss Janos",10),("Horvath Jozsef",12)]
+
+
+stringEncode "a" == "c"
+stringEncode "e" == "g"
+stringEncode "aaabbcc" == "cccddee"
+stringEncode "funkcionalisprogramozas" == "hwpmekqpcnkurtqitcoqzcu"
+stringEncode "szia" == "uzkc"
+stringEncode "realmadrid" == "tgcnocftkf"
