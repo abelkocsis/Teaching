@@ -5,7 +5,11 @@ import Data.List
 alphabet = zip [0..] ['a'..'z']
 
 --7
-everyThird = [x | (i, x) <- alphabet, i `mod` 3 == 2]
+everyThird = ['c', 'f'..'z']
+everyThird' = [x | (i, x) <- alphabet, i `mod` 3 == 2]
+everyThird'' = [c | (i, c) <- alphabet2, i == 2]
+    where alphabet2 = zip (cycle [0,1,2]) ['a'..'z']
+
 
 --8
 courses =
@@ -22,38 +26,3 @@ calendar = [(h, n) | h <- [1..12], n <- [1..31], n < 29 || h /= 2, n < 31 || h `
 --10
 --import!
 compress l = [(n, x) | (x:xs) <- group l, let n = length (x:xs)]
-
---11
-decompress l = concat [replicate n x | (n, x) <- l]
-
---https://people.inf.elte.hu/poor_a/fp6.pdf
-
---1
-fact 0 = 1
-fact 1 = 1
-fact n = n * fact (n-1)
-
---2
-fib 0 = 0
-fib 1 = 1
-fib n = fib (n-1) + fib (n-2)
-
---4
-pow 0 _ = 0
-pow _ 0 = 1
-pow a n = a * pow a (n-1)
-
---5
-range a b
-    | a == b = [a]
-    | otherwise = a : range (a+1) b
-
---6
-range' a b
-    | a <= b = range a b
-    | otherwise = reverse (range b a)
-
-
---7
-length' [] = 0
-length' (x:xs) = 1 + length' xs
