@@ -1,4 +1,4 @@
-**Házi feladat 6.1**
+**Házi feladat 6**
 
 Határidő: november 5. (kedd) 23:59
 
