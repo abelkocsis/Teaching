@@ -1,0 +1,13 @@
+rec 0 == 1
+rec 1 == 4
+rec 3 == 10
+rec 253 == 760
+
+everySecond "Haskell" == "akl"
+everySecond "H" == ""
+everySecond "java" == "aa"
+everySecond "" == ""
+
+elem' 'l' "Haskell"
+not (elem' 'v' "Lujza")
+not (elem' 'x' "")
