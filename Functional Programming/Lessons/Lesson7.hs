@@ -34,27 +34,3 @@ minimum' (x:xs)
     | x < mini = x
     | otherwise = mini
         where mini = minimum' xs
-
-everySecond :: [a] -> [a]
-everySecond [] = []
-everySecond [a] = []
-everySecond [a, b] = [b]
-everySecond (x:y:xs) = y : everySecond xs
-
-elem' :: Eq a => a -> [a] -> Bool
-elem' a [] = False
-elem' a (x:xs) 
-    | a == x = True
-    | otherwise = elem' a xs
-
-value :: Eq a => a -> [(a, b)] -> b
-value a [] = error "Error!"
-value a ((k, e):xs) 
-    | a == k = e
-    | otherwise = value a xs
-
-value' :: Eq a => a -> b -> [(a,b)] -> b
-value' a b [] = b
-value' a b ((k, e):xs) 
-    | a == k = e
-    | otherwise = value' a b xs
