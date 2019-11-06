@@ -2,7 +2,7 @@
 
 Határidő: november 5. (kedd) 23:59
 
-A függgvények definíciója előtt most NEM kötelező megadnod típusokat.
+A függgvények definíciója előtt most NEM kötelező megadnod a típusaikat.
 
 **Feladat 1**
 
@@ -19,7 +19,7 @@ Tesztesetek:
 
 Definiálj egy függvényt, mely kigyűjti egy lista minden második elemét!
 
-*Segítség:* Az `fuggvenynev (x:xs)` mintájára használhatunk `fuggvenynev (x:y:xs)` mintát is. Ekkor `x` az első elem, `y` a második elem, `xs` petig a többi elem. **Fontos!** Ekkor a minta csak 2 vagy több elemű listákra illeszkedik.
+*Segítség:* A `fuggvenynev (x:xs)` mintájára használhatunk `fuggvenynev (x:y:xs)` mintát is. Ekkor `x` az első elem, `y` a második elem, `xs` petig a többi elem. **Fontos!** Ekkor a minta csak 2 vagy több elemű listákra illeszkedik.
 
 Tesztesetek:
 
@@ -33,7 +33,9 @@ Tesztesetek:
 
 Definiáld újra az *elem* függvényt, mely rekurzívan leellenőrzi, hogy egy elem megtalálható-e egy listában!
 
-*Segítség:* elem' :: Ord a => a -> [a] -> Bool
+*Segítség:* elem' :: Eq a => a -> [a] -> Bool
+
+*Segítség2:* Az `Eq` olyan típusosztály, melybe azok a típusok tartoznak, amiket össze tudunk hasonlítani. Az eddigi típusaink (Int, Integer, Bool, Char, stb.) mind ilyenek.
 
 Tesztesetek:
 
