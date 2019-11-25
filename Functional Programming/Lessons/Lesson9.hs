@@ -28,23 +28,5 @@ elem' n l = any' (\a -> n == a) l
 
 --8
 elem'' l n = any' (\a -> n == a) l
-hasAny a b = any' (elem'' b) a
-
---9
-takeWhile' f [] = []
-takeWhile' f (x:xs) 
-    | f x = x : takeWhile' f xs
-    | otherwise = []
-
---10
-dropWhile' f [] = []
-dropWhile' f (x:xs)
-    | f x = dropWhile' f xs
-    | otherwise = (x:xs)
-
---11
-dropWord w = dropWhile' (\a -> a /= ' ') w
-
---12
-users = [ ("mrbean", "4321"), ("admin", "s3cr3t"), ("finn", "algebraic")]
-doesUserExist u l = any' (\(username, passwd) -> username == u) l
+--hasAny a b = any' (elem'' b) a
+hasAny a b = any' (`elem` b) a
