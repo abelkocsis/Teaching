@@ -1,6 +1,30 @@
+--https://people.inf.elte.hu/poor_a/fp10.pdf
+
+--monogram w = unwords (map (\l-> head l : ".") (words w))
+monogram w = (unwords . map (\l-> head l : ".") . words) w
+
 --https://people.inf.elte.hu/poor_a/fp12.pdf
 --1
 data Day = Hetfo | Kedd | Szerda | Csutortok | Pentek | Szombat | Vasarnap
+    deriving Show
+--adatkonstruktor
+--Show: típusosztály
+
+-- ghci: 
+--  :t Hetfo
+--  asd = Hetfo
+--  asd
+-- probléma -> deriving Show
+
+nextDay :: Day -> Day
+nextDay Hetfo = Kedd
+nextDay Kedd  = Szerda
+nextDay Szerda = Csutortok
+nextDay Csutortok = Pentek
+nextDay Pentek = Szombat
+nextDay Szombat = Vasarnap
+nextDay Vasarnap = Hetfo
+--totális függvény
 
 today :: Day -> Day
 today d = d
@@ -14,6 +38,7 @@ isFirstDayOfWeek _ = False
 isWeekend :: Day -> Bool
 isWeekend Szombat = True
 isWeekend Vasarnap = True
+isWeekend _ = False
 
 --típusszinonima:
 type Hours = Integer
@@ -21,10 +46,17 @@ type Minutes = Integer
 
 --4
 data Time = T Hours Minutes
+    deriving Show
+-- ghci: :t T
 
 --5
 showTime :: Time -> [Char]
 showTime (T a b) = show a ++ "." ++ show b
+
+--megjegyzés:
+--instance Show Time where
+--    show (T a b) = show a ++ "." ++ show b
+--megjegyzés vége
 
 --6
 eqTime :: Time -> Time -> Bool
