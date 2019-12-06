@@ -1,8 +1,0 @@
-showSubject (BSc "funkcionalis programozas" 5) == "BSc, funkcionalis programozas, 5 kredit"
-showSubject (BSc "anal3EA" 3) == "BSc, anal3EA, 3 kredit"
-showSubject (BSc "gtlib" 2) == "BSc, gtlib, 2 kredit"
-showSubject (MSc "halado haskell" 3) == "MSc, halado haskell, 3 kredit"
-
-equalsResults (R (BSc "gtlib" 2) 5) (R (BSc "anal3EA" 3) 5)
-not (equalsResults (R (BSc "gtlib" 2) 5) (R (BSc "anal3EA" 3) 4))
-equalsResults (R (BSc "gtlib" 2) 5) (R (MSc "fp" 2) 5)
