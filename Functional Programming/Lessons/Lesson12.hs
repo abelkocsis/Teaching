@@ -1,4 +1,3 @@
-import Data.Maybe
 --https://people.inf.elte.hu/poor_a/fp13.pdf
 --1
 data Privilege = Unprivileged | Admin
@@ -23,7 +22,6 @@ getUser user ((u,pa,pr):xs)
     | otherwise = getUser user xs
 
 --6
---import a fájl elején!
 login :: [Char] -> [Char] -> [([Char], [Char], Privilege)] -> Cookie
 login u p db = doLogin (getUser u db)
      where
