@@ -25,11 +25,11 @@ getUser user ((u,pa,pr):xs)
 --6
 --import a fájl elején!
 login :: [Char] -> [Char] -> [([Char], [Char], Privilege)] -> Cookie
-login name pwd d 
-    | result == Nothing = LoggedOut
-    | fst (fromJust result) /= pwd = LoggedOut
-    | otherwise = LoggedIn name (snd (fromJust result))
-        where result = getUser name d
+login u p db = doLogin (getUser u db)
+     where
+       doLogin Nothing = LoggedOut
+       doLogin (Just (p', priv)) | p' == p = LoggedIn u priv
+                                 | otherwise = LoggedOut
 
 --7
 passwd :: [Char] -> Cookie -> [([Char], [Char], Privilege)] -> [([Char], [Char], Privilege)]
