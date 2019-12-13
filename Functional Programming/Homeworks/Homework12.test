@@ -1,0 +1,14 @@
+getName (Elnok "Joska Pista") == "Joska Pista"
+getName (Alelnok "Alelnok Aladar") == "Alelnok Aladar"
+getName (BizottsagiElnok "Bizottsagi Bernadett" Kommunikacios) == "Bizottsagi Bernadett"
+
+getPosition (Elnok "Joska Pista") == "Elnok"
+getPosition (BizottsagiElnok "Bizottsagi Bernadett" Kommunikacios) == "Kommunikacios bizottsag elnoke"
+getPosition (Alelnok "Alelnok Aladar") == "Alelnok"
+
+getCurrentPosition "Kocsis Abel" aktualisValasztmany == Just "Elnok"
+getCurrentPosition "Toth Lilla" aktualisValasztmany == Just "Kommunikacios bizottsag elnoke"
+getCurrentPosition "Joska Pista" aktualisValasztmany == Nothing
+
+addTag (BizottsagiElnok "Sinka Andor Denes" Tudomanyos) aktualisValasztmany == Just [BizottsagiElnok "Sinka Andor Denes" Tudomanyos,Elnok "Kocsis Abel",Alelnok "Remai Martin",BizottsagiElnok "Toth Lilla" Kommunikacios]
+addTag (Alelnok "Remai Martin") aktualisValasztmany  == Nothing
